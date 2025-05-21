@@ -1,6 +1,11 @@
 backend:
   name: git-gateway
+  repo: ShvetsViktor/monovision
   branch: main
+  auth:
+    client_id: Ov23liXsMUOgfHsgYnKL
+  auth_scope: repo
+local_backend: false
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"

@@ -7,25 +7,23 @@
     <meta name="description" content="Website for Monovision Studio">
     <meta name="author" content="Viktor Shvets">
     <title>Monovision Studio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/b3be5a7b3b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/modern-normalize.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,-25&icon_names=battery_horiz_075" />
-    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
     <main>
         <section class="promo">
             <div class="container">
-                <h1 class="promo__title">Monovision Studio <span class="material-symbols-outlined">
-                        battery_horiz_075
-                    </span></h1>
+                <h1 class="promo__title">Monovision Studio</h1>
                 <h2 class="promo__subtitle">Want some style on your photos? </h2>
-                <a href="#" class="btn">Portfolio</a>
+                <a href="#portfolio" class="btn">Portfolio</a>
                 <div class="promo__address">
                     Location:
                     <address>
@@ -80,7 +78,7 @@
         </section>
         <section class="works">
             <div class="container">
-                <h2 class="title"><span>Our works</span></h2>
+                <h2 id="portfolio" class="title"><span>Our works</span></h2>
                 <div class="works__grid">
                     <img src="img/works/bridge.jpg" alt="bridge">
                     <img src="img/works/cat.jpg" alt="cat">
@@ -110,9 +108,7 @@
                     <img src="logo/logo-first-alliances.jpg" alt="first-alliances-logo">
                     <img src="logo/logo-growell.jpg" alt="logo-growell">
                     <img src="logo/logo-iec-winter-wolf.jpg" alt="logo-iec-winter-wolf">
-                    <img src="logo/logo-first-alliances.jpg" alt="first-alliances-logo">
-                    <img src="logo/logo-growell.jpg" alt="logo-growell">
-                    <img src="logo/logo-iec-winter-wolf.jpg" alt="logo-iec-winter-wolf">
+
                 </div>
             </div>
         </section>
@@ -120,17 +116,23 @@
             <ul class="footer__social">
                 <li>
                     <a href="#" class="footer__link">
-                        <img src="icons/facebook.svg" alt="facebook-icon">
+                        <!-- <img src="icons/facebook.svg" alt="facebook-icon">
+                        <span class="icon-facebook"></span> -->
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="footer__link">
-                        <img src="icons/tg.svg" alt="telegram-icon">
+                        <!-- <img src="icons/tg.svg" alt="telegram-icon">
+                        <span class="icon-telegram"></span> -->
+                        <i class="fa-brands fa-telegram"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="footer__link">
-                        <img src="icons/whatsapp.svg" alt="whatsapp-icon">
+                        <!-- <img src="icons/whatsapp.svg" alt="whatsapp-icon">
+                        <span class="icon-whatsapp"></span> -->
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </li>
             </ul>
@@ -140,6 +142,17 @@
             <a href="tel:+6569964725" class="footer__tel">+6569964725</a>
         </footer>
     </main>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", (user) => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
