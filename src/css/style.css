@@ -577,12 +577,10 @@ html {
 
 .footer__tel {
     font-weight: 400;
-    font-size: 20px;
     color: var(--light-color);
     text-decoration: none;
 
     @media screen and (max-width: 375px) {
         order: 2;
-        font-size: 16px;
     }
 }
