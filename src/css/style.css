@@ -94,7 +94,7 @@ html {
 
     @media screen and (max-width: 768px) {
         & {
-            background-image: url('/src/img/tablet_bg.jpg');
+            background-image: url('../img/tablet_bg.jpg');
         }
     }
 
