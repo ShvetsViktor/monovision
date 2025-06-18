@@ -39,7 +39,7 @@
             <div class="container">
                 <h1 class="promo__title">Monovision Studio</h1>
                 <h2 class="promo__subtitle">Want some style on your photos? </h2>
-                <a href="#portfolio" class="btn">Portfolio</a>
+                <a href="#portfolio" class="btn" data-event="Portfolio">Portfolio</a>
                 <div class="promo__address">
                     Location:
                     <address>
@@ -168,6 +168,22 @@
                 }
             });
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('[data-event]').forEach(function (el) {
+                el.addEventListener('click', function () {
+                    const eventName = el.getAttribute('data-event');
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: 'custom_click',
+                        eventCategory: 'Button',
+                        eventAction: eventName,
+                        eventLabel: el.textContent.trim()
+                    });
+                });
+            });
+        });
     </script>
 </body>
 
