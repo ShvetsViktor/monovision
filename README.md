@@ -19,3 +19,7 @@ To explore modern approaches to responsive web design and practice best front-en
 
 - HTML5
 - CSS
+
+## Link to Figma design
+
+[https://www.figma.com/design/VruIWSar06GN2g9Ir3qhsE/Photo-portfolio?node-id=0-1&p=f&t=2fvdjsIzOwilcUxZ-0](https://www.figma.com/design/VruIWSar06GN2g9Ir3qhsE/Photo-portfolio?node-id=0-1&p=f&t=2fvdjsIzOwilcUxZ-0)
